@@ -32,33 +32,38 @@
   --font-display: var(--font-display);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
+  --color-lime: var(--lime);
 }
 
+
 :root {
-  --radius: 0.25rem;
-  --background: oklch(0.968 0.012 85);
-  --foreground: oklch(0.22 0.02 60);
-  --card: oklch(0.985 0.008 85);
-  --card-foreground: oklch(0.22 0.02 60);
-  --popover: oklch(0.985 0.008 85);
-  --popover-foreground: oklch(0.22 0.02 60);
-  --primary: oklch(0.24 0.03 55);
-  --primary-foreground: oklch(0.97 0.012 85);
-  --secondary: oklch(0.93 0.016 80);
-  --secondary-foreground: oklch(0.24 0.03 55);
-  --muted: oklch(0.93 0.016 80);
-  --muted-foreground: oklch(0.5 0.02 65);
-  --accent: oklch(0.58 0.16 42);
-  --accent-foreground: oklch(0.98 0.01 85);
-  --destructive: oklch(0.55 0.2 27);
-  --destructive-foreground: oklch(0.98 0.01 85);
-  --border: oklch(0.86 0.018 75);
-  --input: oklch(0.86 0.018 75);
-  --ring: oklch(0.58 0.16 42);
-  --font-display: "Instrument Serif", Georgia, serif;
+  --radius: 0rem;
+  --background: oklch(0.16 0.008 165);
+  --foreground: oklch(0.95 0.008 160);
+  --card: oklch(0.21 0.012 168);
+  --card-foreground: oklch(0.95 0.008 160);
+  --popover: oklch(0.21 0.012 168);
+  --popover-foreground: oklch(0.95 0.008 160);
+  --primary: oklch(0.86 0.17 165);
+  --primary-foreground: oklch(0.16 0.008 165);
+  --secondary: oklch(0.25 0.014 168);
+  --secondary-foreground: oklch(0.95 0.008 160);
+  --muted: oklch(0.25 0.014 168);
+  --muted-foreground: oklch(0.68 0.015 165);
+  --accent: oklch(0.86 0.17 165);
+  --accent-foreground: oklch(0.16 0.008 165);
+  --lime: oklch(0.9 0.19 128);
+  --destructive: oklch(0.6 0.2 27);
+  --destructive-foreground: oklch(0.98 0.01 160);
+  --border: oklch(0.3 0.014 168);
+  --input: oklch(0.3 0.014 168);
+  --ring: oklch(0.86 0.17 165);
+  --grid-line: oklch(0.3 0.014 168 / 0.55);
+  --font-display: "JetBrains Mono", ui-monospace, monospace;
   --font-sans: "Work Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
+
 
 @layer base {
   * {
@@ -79,3 +84,15 @@
 @utility rule-top {
   border-top: 1px solid var(--border);
 }
+
+@utility grid-field {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@utility glow-mint {
+  box-shadow: 0 0 60px -20px color-mix(in oklab, var(--accent) 60%, transparent);
+}
+
