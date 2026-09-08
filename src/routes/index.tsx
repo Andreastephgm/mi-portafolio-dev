@@ -24,9 +24,9 @@ export const Route = createFileRoute("/")({
 const proyectos = [
   {
     n: "01",
-    nombre: "ÓRBITA",
+    nombre: "POKEMON",
     desc: "Panel de seguimiento de hábitos con estadísticas semanales y sincronización entre dispositivos.",
-    stack: ["React", "TypeScript", "Postgres"],
+    stack: ["SWIFT", "TYPE", "Postgres"],
   },
   {
     n: "02",
@@ -49,11 +49,11 @@ const proyectos = [
 ];
 
 const habilidades = [
-  "JavaScript",
+  "Java",
   "TypeScript",
-  "React",
-  "Next.js",
-  "Node",
+  "Springboot",
+  "React native",
+  "Swift",
   "Python",
   "Postgres",
   "Docker",
@@ -67,16 +67,15 @@ function Index() {
           <div className="pointer-events-none absolute -top-20 -left-20 h-64 w-64 rounded-full bg-accent/10 blur-3xl" />
           <div className="relative z-10">
             <p className="mb-4 font-mono text-sm tracking-tight text-accent">
-              // SISTEMA INICIALIZADO
+              // ANDREA STEFANNY GARCIA MEJIA
             </p>
             <h1 className="mb-6 font-display text-6xl leading-none font-bold tracking-tighter md:text-8xl">
               DESARROLLADORA
               <br />
-              <span className="text-lime italic">DE SOFTWARE</span>
+              <span className="text-lime italic">JUNIOR FULLSTACK</span>
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Diseño y construyo aplicaciones web: interfaces claras, código ordenado y productos
-              que de verdad se usan.
+              Disfruto creando aplicaciones web y móviles.
             </p>
           </div>
         </section>
