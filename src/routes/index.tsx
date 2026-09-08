@@ -75,8 +75,19 @@ function Index() {
               <span className="text-lime italic">JUNIOR FULLSTACK</span>
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Disfruto creando aplicaciones web y móviles.
+              Disfruto creando aplicaciones{" "}
+              <span className="text-foreground">web</span> y{" "}
+              <span className="text-foreground">móviles</span>: interfaces
+              limpias, código ordenado y detalles que se sienten bien al usar.
             </p>
+            <div className="mt-6 flex flex-wrap items-center gap-3 font-mono text-xs text-muted-foreground">
+              <span className="inline-flex items-center gap-2 border border-border px-3 py-1">
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-lime" />
+                disponible para trabajar
+              </span>
+              <span className="border border-border px-3 py-1">Colombia · remoto</span>
+            </div>
+
           </div>
         </section>
 
