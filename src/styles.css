@@ -32,7 +32,9 @@
   --font-display: var(--font-display);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
+  --color-lime: var(--lime);
 }
+
 
 :root {
   --radius: 0rem;
@@ -82,3 +84,15 @@
 @utility rule-top {
   border-top: 1px solid var(--border);
 }
+
+@utility grid-field {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@utility glow-mint {
+  box-shadow: 0 0 60px -20px color-mix(in oklab, var(--accent) 60%, transparent);
+}
+
