@@ -24,160 +24,143 @@ export const Route = createFileRoute("/")({
 const proyectos = [
   {
     n: "01",
-    nombre: "Órbita",
-    anio: "2025",
+    nombre: "ÓRBITA",
     desc: "Panel de seguimiento de hábitos con estadísticas semanales y sincronización entre dispositivos.",
     stack: ["React", "TypeScript", "Postgres"],
   },
   {
     n: "02",
-    nombre: "Mercado Local",
-    anio: "2025",
+    nombre: "MERCADO LOCAL",
     desc: "Tienda en línea para productores pequeños, con carrito, pagos y panel de pedidos.",
     stack: ["Next.js", "Stripe", "Tailwind"],
   },
   {
     n: "03",
-    nombre: "Ruta Segura",
-    anio: "2024",
+    nombre: "RUTA SEGURA",
     desc: "App de reportes ciudadanos con mapa colaborativo y notificaciones por zona.",
     stack: ["React Native", "Node", "MapLibre"],
   },
   {
     n: "04",
-    nombre: "Bitácora API",
-    anio: "2024",
+    nombre: "BITÁCORA API",
     desc: "API de registro de eventos con autenticación por roles y documentación automática.",
     stack: ["Python", "FastAPI", "Docker"],
   },
 ];
 
 const habilidades = [
-  { titulo: "Lenguajes", items: "JavaScript · TypeScript · Python · SQL" },
-  { titulo: "Interfaces", items: "React · Next.js · Tailwind · accesibilidad" },
-  { titulo: "Servidor y datos", items: "Node · FastAPI · Postgres · REST" },
-  { titulo: "Herramientas", items: "Git · Docker · Vitest · Figma" },
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node",
+  "Python",
+  "Postgres",
+  "Docker",
 ];
 
 function Index() {
   return (
-    <div className="min-h-screen">
-      <header className="mx-auto flex max-w-5xl items-baseline justify-between px-6 py-8">
-        <span className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
-          Andrea García
-        </span>
-        <nav className="flex gap-6 font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
-          <a href="#proyectos" className="transition-colors hover:text-accent">
-            Proyectos
-          </a>
-          <a href="#sobre" className="transition-colors hover:text-accent">
-            Sobre mí
-          </a>
-          <a href="#contacto" className="transition-colors hover:text-accent">
-            Contacto
-          </a>
-        </nav>
-      </header>
-
-      <main className="mx-auto max-w-5xl px-6">
-        <section className="py-20 md:py-28">
-          <h1 className="max-w-[14ch] font-display text-[clamp(3rem,9vw,6.5rem)] leading-[0.95] tracking-tight">
-            Desarrolladora de <em className="text-accent">software</em>
-          </h1>
-          <p className="mt-8 max-w-[52ch] text-lg leading-relaxed text-muted-foreground">
-            Diseño y construyo aplicaciones web: interfaces claras, código ordenado y productos que
-            de verdad se usan. Aquí están algunos de los proyectos en los que he trabajado.
-          </p>
-          <a
-            href="#proyectos"
-            className="mt-10 inline-block border-b border-accent pb-1 font-mono text-sm uppercase tracking-[0.18em] text-accent"
-          >
-            Ver proyectos ↓
-          </a>
-        </section>
-
-        <section id="proyectos" className="rule-top py-16">
-          <h2 className="mb-10 font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Proyectos
-          </h2>
-          <ul>
-            {proyectos.map((p) => (
-              <li key={p.n} className="group rule-top py-8">
-                <div className="grid gap-4 md:grid-cols-[3rem_1fr_auto] md:items-baseline md:gap-8">
-                  <span className="font-mono text-xs text-accent">{p.n}</span>
-                  <div>
-                    <h3 className="font-display text-3xl leading-tight transition-colors group-hover:text-accent">
-                      {p.nombre}
-                    </h3>
-                    <p className="mt-2 max-w-[52ch] leading-relaxed text-muted-foreground">
-                      {p.desc}
-                    </p>
-                    <p className="mt-4 font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
-                      {p.stack.join(" / ")}
-                    </p>
-                  </div>
-                  <span className="font-mono text-xs text-muted-foreground">{p.anio}</span>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section id="sobre" className="rule-top grid gap-10 py-16 md:grid-cols-[1fr_2fr]">
-          <h2 className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Sobre mí
-          </h2>
-          <div>
-            <p className="max-w-[58ch] font-display text-2xl leading-snug">
-              Me gusta el trabajo cuidadoso: entender el problema, escribir poco código y que lo que
-              queda sea fácil de mantener.
+    <div className="min-h-screen bg-background text-foreground">
+      <div className="mx-auto max-w-5xl space-y-32 px-6 py-20">
+        <section className="relative">
+          <div className="pointer-events-none absolute -top-20 -left-20 h-64 w-64 rounded-full bg-accent/10 blur-3xl" />
+          <div className="relative z-10">
+            <p className="mb-4 font-mono text-sm tracking-tight text-accent">
+              // SISTEMA INICIALIZADO
             </p>
-            <dl className="mt-10 grid gap-8 sm:grid-cols-2">
+            <h1 className="mb-6 font-display text-6xl leading-none font-bold tracking-tighter md:text-8xl">
+              DESARROLLADORA
+              <br />
+              <span className="text-lime italic">DE SOFTWARE</span>
+            </h1>
+            <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
+              Diseño y construyo aplicaciones web: interfaces claras, código ordenado y productos
+              que de verdad se usan.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div className="mb-12 flex items-end justify-between">
+            <h2 className="font-display text-3xl font-bold">PROYECTOS_SELECCIONADOS</h2>
+            <span className="font-mono text-sm text-muted-foreground">[04]</span>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            {proyectos.map((p) => (
+              <div
+                key={p.n}
+                className="group relative border border-border bg-card/50 p-6 transition-colors hover:border-accent/50"
+              >
+                <div className="relative mb-6 h-48 overflow-hidden bg-secondary grid-field">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                  <div className="flex h-full items-center justify-center font-mono text-6xl text-muted-foreground/40">
+                    {p.n}
+                  </div>
+                </div>
+                <h3 className="mb-2 font-display text-xl font-bold">{p.nombre}</h3>
+                <div className="mb-4 flex flex-wrap gap-2">
+                  {p.stack.map((s) => (
+                    <span
+                      key={s}
+                      className="border border-border px-2 py-0.5 font-mono text-[10px] uppercase text-accent"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-sm leading-snug text-muted-foreground">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="rule-top pt-32">
+          <div className="flex flex-col gap-12 md:flex-row">
+            <div className="md:w-1/3">
+              <h2 className="mb-4 font-display text-3xl font-bold">HABILIDADES</h2>
+              <p className="font-mono text-xs uppercase text-muted-foreground">
+                Stack &amp; herramientas
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4 md:w-2/3 md:grid-cols-4">
               {habilidades.map((h) => (
-                <div key={h.titulo}>
-                  <dt className="font-mono text-xs uppercase tracking-[0.18em] text-accent">
-                    {h.titulo}
-                  </dt>
-                  <dd className="mt-2 leading-relaxed text-muted-foreground">{h.items}</dd>
+                <div
+                  key={h}
+                  className="border border-border p-4 font-mono text-sm transition-colors hover:bg-secondary"
+                >
+                  {h}
                 </div>
               ))}
-            </dl>
+            </div>
           </div>
         </section>
 
-        <section id="contacto" className="rule-top py-20">
-          <h2 className="mb-6 font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Contacto
-          </h2>
-          <p className="font-display text-[clamp(2rem,6vw,4rem)] leading-[1.05]">
-            ¿Trabajamos juntos?
-          </p>
-          <div className="mt-8 flex flex-wrap gap-x-10 gap-y-3 font-mono text-sm">
+        <section className="relative overflow-hidden border border-border bg-card p-12 text-center">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
+          <div className="relative z-10">
+            <h2 className="mb-6 font-display text-4xl font-bold">¿TRABAJAMOS JUNTOS?</h2>
+            <p className="mx-auto mb-10 max-w-lg text-muted-foreground">
+              Disponible para nuevos proyectos y colaboraciones.
+            </p>
             <a
               href="mailto:hola@ejemplo.com"
-              className="border-b border-border pb-1 transition-colors hover:border-accent hover:text-accent"
+              className="inline-block bg-accent px-10 py-4 font-mono font-bold tracking-widest text-accent-foreground transition-colors hover:bg-lime"
             >
-              hola@ejemplo.com
+              CONTACTAR AHORA
             </a>
-            <a
-              href="#"
-              className="border-b border-border pb-1 transition-colors hover:border-accent hover:text-accent"
-            >
-              GitHub
-            </a>
-            <a
-              href="#"
-              className="border-b border-border pb-1 transition-colors hover:border-accent hover:text-accent"
-            >
-              LinkedIn
-            </a>
+            <div className="mt-10 flex justify-center gap-8 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+              <a href="#" className="transition-colors hover:text-accent">
+                GitHub
+              </a>
+              <a href="#" className="transition-colors hover:text-accent">
+                LinkedIn
+              </a>
+            </div>
           </div>
         </section>
-      </main>
-
-      <footer className="rule-top mx-auto max-w-5xl px-6 py-8">
-        <p className="font-mono text-xs text-muted-foreground">© 2026 Andrea García</p>
-      </footer>
+      </div>
     </div>
   );
 }
