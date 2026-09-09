@@ -42,7 +42,7 @@ const proyectos = [
 
   {
     n: "03",
-    nombre: "RUTA SEGURA",
+    nombre: "GAME STREAM",
     desc: "App de reportes ciudadanos con mapa colaborativo y notificaciones por zona.",
     stack: ["React Native", "Node", "MapLibre"],
     img: proyecto03Asset.url,
