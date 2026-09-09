@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import animeflixAsset from "@/assets/animeflix-backend.png.asset.json";
 import animeflixFrontAsset from "@/assets/animeflix-frontend.png.asset.json";
+import proyecto03Asset from "@/assets/proyecto-03.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,6 +45,7 @@ const proyectos = [
     nombre: "RUTA SEGURA",
     desc: "App de reportes ciudadanos con mapa colaborativo y notificaciones por zona.",
     stack: ["React Native", "Node", "MapLibre"],
+    img: proyecto03Asset.url,
   },
   {
     n: "04",
