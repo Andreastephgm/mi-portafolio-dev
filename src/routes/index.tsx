@@ -33,9 +33,9 @@ const proyectos = [
   },
   {
     n: "02",
-    nombre: "MERCADO LOCAL",
+    nombre: "ANIMEFLIX",
     desc: "Tienda en línea para productores pequeños, con carrito, pagos y panel de pedidos.",
-    stack: ["Next.js", "Stripe", "Tailwind"],
+    stack: ["HTML5", "CSS3", "VANILLA JAVASCRIPT"],
     img: animeflixFrontAsset.url,
   },
 
