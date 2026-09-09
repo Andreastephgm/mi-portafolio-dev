@@ -114,7 +114,7 @@ function Index() {
                       src={p.img}
                       alt={`Vista previa del proyecto ${p.nombre}`}
                       loading="lazy"
-                      className="h-full w-full object-cover object-left-top"
+                      className="h-full w-full bg-secondary object-contain object-center p-2"
                     />
                   ) : (
                     <div className="flex h-full items-center justify-center font-mono text-6xl text-muted-foreground/40">
