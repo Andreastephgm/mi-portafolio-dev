@@ -26,8 +26,8 @@ const proyectos = [
   {
     n: "01",
     nombre: "ANIMEFLIX-BACKEND",
-    desc: "Panel de seguimiento de hábitos con estadísticas semanales y sincronización entre dispositivos.",
-    stack: ["SWIFT", "TYPE", "Postgres"],
+    desc: "This is the backend for the AnimeFlix project, built with Java + Spring Boot and using MySQL as the relational database. \n",
+    stack: ["JAVA", "SPRINGBOOT", "MYSQL"],
     img: animeflixAsset.url,
   },
   {
@@ -95,7 +95,7 @@ function Index() {
 
         <section>
           <div className="mb-12 flex items-end justify-between">
-            <h2 className="font-display text-3xl font-bold">PROYECTOS_SELECCIONADOS</h2>
+            <h2 className="font-display text-3xl font-bold">PROJECTS</h2>
             <span className="font-mono text-sm text-muted-foreground">[04]</span>
           </div>
 
