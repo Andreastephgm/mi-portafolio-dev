@@ -1,7 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
-import animeflixAsset from "@/assets/animeflix-backend.png.asset.json";
-import animeflixFrontAsset from "@/assets/animeflix-frontend.png.asset.json";
-import proyecto03Asset from "@/assets/proyecto-03.png.asset.json";
+import {
+  SiOpenjdk,
+  SiSpringboot,
+  SiTypescript,
+  SiReact,
+  SiSwift,
+  SiPython,
+  SiPostgresql,
+  SiMongodb,
+  SiDocker,
+  SiGit,
+} from "react-icons/si";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -30,14 +39,14 @@ const proyectos = [
     nombre: "ANIMEFLIX-BACKEND",
     desc: "This is the backend for the AnimeFlix project, built with Java + Spring Boot and using MySQL as the relational database. \n",
     stack: ["JAVA", "SPRINGBOOT", "MYSQL"],
-    img: animeflixAsset.url,
+    img: "src/assets/animeflix-backend.png",
   },
   {
     n: "02",
     nombre: "ANIMEFLIX",
     desc: "Animeflix is a frontend web platform inspired by anime streaming sites. \n",
     stack: ["HTML5", "CSS3", "VANILLA JAVASCRIPT"],
-    img: animeflixFrontAsset.url,
+    img: "src/assets/animeflix-frontend.png",
   },
 
   {
@@ -45,25 +54,28 @@ const proyectos = [
     nombre: "GAME STREAM",
     desc: "GameStream is a mobile application developed in Swift that offers users a modern and immersive interface to explore and enjoy content related to video games.\n",
     stack: ["SWIFTUI", "MVVM", "SWIFT5"],
-    img: proyecto03Asset.url,
+    img: "src/assets/game-stream.png",
   },
   {
     n: "04",
-    nombre: "BITÁCORA API",
-    desc: "API de registro de eventos con autenticación por roles y documentación automática.",
-    stack: ["Python", "FastAPI", "Docker"],
+    nombre: "FIT GODS FRONTEND",
+    desc: "Fit Gods is a web application designed to help users track, organize, and manage workout routines and fitness goals.",
+    stack: ["Javascript", "HTML5", "CSS3", "Docker"],
+    img: "src/assets/fit-gods-frontend.png"
   },
 ];
 
 const habilidades = [
-  "Java",
-  "TypeScript",
-  "Springboot",
-  "React native",
-  "Swift",
-  "Python",
-  "Postgres",
-  "Docker",
+  { nombre: "Java", Icon: SiOpenjdk },
+  { nombre: "Springboot", Icon: SiSpringboot },
+  { nombre: "TypeScript", Icon: SiTypescript },
+  { nombre: "React Native", Icon: SiReact },
+  { nombre: "Swift", Icon: SiSwift },
+  { nombre: "Python", Icon: SiPython },
+  { nombre: "PostgreSQL", Icon: SiPostgresql },
+  { nombre: "MongoDB", Icon: SiMongodb },
+  { nombre: "Docker", Icon: SiDocker },
+  { nombre: "Git", Icon: SiGit },
 ];
 
 function Index() {
@@ -100,7 +112,7 @@ function Index() {
 
         <section>
           <div className="mb-12 flex items-end justify-between">
-            <h2 className="font-display text-3xl font-bold">PROJECTS</h2>
+            <h2 className="font-display text-3xl font-bold">PROYECTOS</h2>
             <span className="font-mono text-sm text-muted-foreground">[04]</span>
           </div>
 
@@ -151,14 +163,18 @@ function Index() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 md:w-2/3 md:grid-cols-4">
-              {habilidades.map((h) => (
-                <div
-                  key={h}
-                  className="border border-border p-4 font-mono text-sm transition-colors hover:bg-secondary"
-                >
-                  {h}
-                </div>
-              ))}
+              {habilidades.map((h) => {
+                const IconComponent = h.Icon;
+                return (
+                  <div
+                    key={h.nombre}
+                    className="flex items-center gap-3 border border-border p-4 font-mono text-sm transition-colors hover:bg-secondary group"
+                  >
+                    <IconComponent className="h-5 w-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
+                    <span>{h.nombre}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -177,10 +193,10 @@ function Index() {
               CONTACTAR AHORA
             </a>
             <div className="mt-10 flex justify-center gap-8 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              <a href="#" className="transition-colors hover:text-accent">
+              <a href="https://github.com/Andreastephgm" className="transition-colors hover:text-accent">
                 GitHub
               </a>
-              <a href="#" className="transition-colors hover:text-accent">
+              <a href="https://www.linkedin.com/in/andreastefannydev/" className="transition-colors hover:text-accent">
                 LinkedIn
               </a>
             </div>
