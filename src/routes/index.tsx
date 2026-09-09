@@ -34,7 +34,7 @@ const proyectos = [
   {
     n: "02",
     nombre: "ANIMEFLIX",
-    desc: "Tienda en línea para productores pequeños, con carrito, pagos y panel de pedidos.",
+    desc: "Animeflix is a frontend web platform inspired by anime streaming sites. \n",
     stack: ["HTML5", "CSS3", "VANILLA JAVASCRIPT"],
     img: animeflixFrontAsset.url,
   },
