@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
 const proyectos = [
   {
     n: "01",
-    nombre: "POKEMON",
+    nombre: "ANIMEFLIX-BACKEND",
     desc: "Panel de seguimiento de hábitos con estadísticas semanales y sincronización entre dispositivos.",
     stack: ["SWIFT", "TYPE", "Postgres"],
   },
