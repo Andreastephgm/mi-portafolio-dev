@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import animeflixAsset from "@/assets/animeflix-backend.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -27,6 +28,7 @@ const proyectos = [
     nombre: "ANIMEFLIX-BACKEND",
     desc: "Panel de seguimiento de hábitos con estadísticas semanales y sincronización entre dispositivos.",
     stack: ["SWIFT", "TYPE", "Postgres"],
+    img: animeflixAsset.url,
   },
   {
     n: "02",
@@ -104,10 +106,19 @@ function Index() {
                 className="group relative border border-border bg-card/50 p-6 transition-colors hover:border-accent/50"
               >
                 <div className="relative mb-6 h-48 overflow-hidden bg-secondary grid-field">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                  <div className="flex h-full items-center justify-center font-mono text-6xl text-muted-foreground/40">
-                    {p.n}
-                  </div>
+                  {"img" in p && p.img ? (
+                    <img
+                      src={p.img}
+                      alt={`Vista previa del proyecto ${p.nombre}`}
+                      loading="lazy"
+                      className="h-full w-full object-cover object-left-top"
+                    />
+                  ) : (
+                    <div className="flex h-full items-center justify-center font-mono text-6xl text-muted-foreground/40">
+                      {p.n}
+                    </div>
+                  )}
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 </div>
                 <h3 className="mb-2 font-display text-xl font-bold">{p.nombre}</h3>
                 <div className="mb-4 flex flex-wrap gap-2">
