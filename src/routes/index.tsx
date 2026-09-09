@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import animeflixAsset from "@/assets/animeflix-backend.png.asset.json";
+import animeflixFrontAsset from "@/assets/animeflix-frontend.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
