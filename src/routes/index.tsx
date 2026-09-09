@@ -28,6 +28,7 @@ const proyectos = [
     nombre: "ANIMEFLIX-BACKEND",
     desc: "Panel de seguimiento de hábitos con estadísticas semanales y sincronización entre dispositivos.",
     stack: ["SWIFT", "TYPE", "Postgres"],
+    img: animeflixAsset.url,
   },
   {
     n: "02",
