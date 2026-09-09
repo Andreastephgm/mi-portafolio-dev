@@ -43,8 +43,8 @@ const proyectos = [
   {
     n: "03",
     nombre: "GAME STREAM",
-    desc: "App de reportes ciudadanos con mapa colaborativo y notificaciones por zona.",
-    stack: ["React Native", "Node", "MapLibre"],
+    desc: "GameStream is a mobile application developed in Swift that offers users a modern and immersive interface to explore and enjoy content related to video games.\n",
+    stack: ["SWIFTUI", "MVVM", "SWIFT5"],
     img: proyecto03Asset.url,
   },
   {
