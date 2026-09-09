@@ -36,7 +36,9 @@ const proyectos = [
     nombre: "MERCADO LOCAL",
     desc: "Tienda en línea para productores pequeños, con carrito, pagos y panel de pedidos.",
     stack: ["Next.js", "Stripe", "Tailwind"],
+    img: animeflixFrontAsset.url,
   },
+
   {
     n: "03",
     nombre: "RUTA SEGURA",
