@@ -39,14 +39,14 @@ const proyectos = [
     nombre: "ANIMEFLIX-BACKEND",
     desc: "This is the backend for the AnimeFlix project, built with Java + Spring Boot and using MySQL as the relational database. \n",
     stack: ["JAVA", "SPRINGBOOT", "MYSQL"],
-    img: "src/assets/animeflix-backend.png",
+    img: "/assets/animeflix-backend.png"
   },
   {
     n: "02",
     nombre: "ANIMEFLIX",
     desc: "Animeflix is a frontend web platform inspired by anime streaming sites. \n",
     stack: ["HTML5", "CSS3", "VANILLA JAVASCRIPT"],
-    img: "src/assets/animeflix-frontend.png",
+    img: "/assets/animeflix-frontend.png",
   },
 
   {
@@ -54,14 +54,14 @@ const proyectos = [
     nombre: "GAME STREAM",
     desc: "GameStream is a mobile application developed in Swift that offers users a modern and immersive interface to explore and enjoy content related to video games.\n",
     stack: ["SWIFTUI", "MVVM", "SWIFT5"],
-    img: "src/assets/game-stream.png",
+    img: "/assets/game-stream.png",
   },
   {
     n: "04",
     nombre: "FIT GODS FRONTEND",
     desc: "Fit Gods is a web application designed to help users track, organize, and manage workout routines and fitness goals.",
     stack: ["Javascript", "HTML5", "CSS3", "Docker"],
-    img: "src/assets/fit-gods-frontend.png"
+    img: "/assets/fit-gods-frontend.png"
   },
 ];
 
