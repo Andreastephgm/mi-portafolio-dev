@@ -40,7 +40,7 @@ const proyectos = [
     nombre: "ANIMEFLIX-BACKEND",
     desc: "Backend desarrollado para el proyecto AnimeFlix con Java y Spring Boot, utilizando MySQL como base de datos relacional.",
     stack: ["JAVA", "SPRINGBOOT", "MYSQL"],
-    img: "/assets/animeflix-backend.png",
+    video: "/assets/anime_backend.mp4",
     github: "https://github.com/Andreastephgm/animeflix-backend",
   },
   {
@@ -56,7 +56,7 @@ const proyectos = [
     nombre: "GAME STREAM",
     desc: "Aplicación móvil desarrollada en Swift con arquitectura MVVM que ofrece una interfaz moderna e inmersiva para explorar contenido de videojuegos.",
     stack: ["SWIFTUI", "MVVM", "SWIFT5"],
-    img: "/assets/game-stream.png",
+    video: "/assets/game_stream.mp4",
     github: "https://github.com/Andreastephgm/gameStream", 
   },
   {
@@ -150,7 +150,7 @@ function Index() {
           </div>
         </section>
 
-        {/* PROYECTOS SECTION */}
+        {/* PROYECTOS SECTION (GRIDA 2 COLUMNAS) */}
         <section>
           <div className="mb-12 flex items-end justify-between border-b border-border pb-4">
             <h2 className="font-display text-3xl font-extrabold tracking-tight">PROYECTOS</h2>
@@ -164,7 +164,8 @@ function Index() {
                 className="group relative flex flex-col justify-between border border-border bg-card/70 p-6 transition-all duration-200 hover:border-accent hover:shadow-lg hover:shadow-accent/5"
               >
                 <div>
-                  <div className="relative mb-6 h-52 overflow-hidden border border-border/50 bg-secondary grid-field">
+                  {/* FOTO / VIDEO CONTAINER (FONDO NEGRO + OBJECT-CONTAIN) */}
+                  <div className="relative mb-6 h-60 w-full overflow-hidden border border-border/50 bg-black flex items-center justify-center">
                     {p.video ? (
                       <video
                         src={p.video}
@@ -172,11 +173,11 @@ function Index() {
                         loop
                         muted
                         playsInline
-                        className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                        className="h-full w-full object-contain object-center transition-transform duration-300 group-hover:scale-105"
                       />
-                    ) : p.img ? (
+                    ) : p.video ? (
                       <img
-                        src={p.img}
+                        src={p.video}
                         alt={`Vista previa del proyecto ${p.nombre}`}
                         loading="lazy"
                         className="h-full w-full object-contain object-center p-3 transition-transform duration-300 group-hover:scale-105"
