@@ -38,8 +38,8 @@ const proyectos = [
   {
     n: "01",
     nombre: "ANIMEFLIX-BACKEND",
-    desc: "Backend desarrollado para el proyecto AnimeFlix con Java y Spring Boot, utilizando MySQL como base de datos relacional.",
-    stack: ["JAVA", "SPRINGBOOT", "MYSQL"],
+    desc: "Backend desarrollado para el proyecto AnimeFlix con Java y Spring Boot, utilizando MongoDB como base de datos.",
+    stack: ["JAVA", "SPRINGBOOT", "MongoDB"],
     video: "/assets/anime_backend.mp4",
     github: "https://github.com/Andreastephgm/animeflix-backend",
   },
@@ -66,6 +66,14 @@ const proyectos = [
     stack: ["JAVASCRIPT", "REACT", "CSS3"],
     video: "/assets/fit_gods_video.mp4",
     github: "https://github.com/Andreastephgm/fit-gods-frontend-react", 
+  },
+  {
+    n: "05",
+    nombre: "FIT GODS BACKEND",
+    desc: "Backend desarrollado para el proyecto Fit Gods con Java, Springboot, JWT y arquitectura hexagonal.",
+    stack: ["JAVA", "SPRINGBOOT", "MySQL"],
+    video: "/assets/fit-backend.mp4",
+    github: "https://github.com/Andreastephgm/fit-gods-auth.git", 
   },
 ];
 
@@ -154,7 +162,7 @@ function Index() {
         <section>
           <div className="mb-12 flex items-end justify-between border-b border-border pb-4">
             <h2 className="font-display text-3xl font-extrabold tracking-tight">PROYECTOS</h2>
-            <span className="font-mono text-sm font-bold text-accent">[04]</span>
+            <span className="font-mono text-sm font-bold text-accent">[05]</span>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
